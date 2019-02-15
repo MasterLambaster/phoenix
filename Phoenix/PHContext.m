@@ -12,6 +12,8 @@
 #import "PHEventHandler.h"
 #import "PHGlobalEventMonitor.h"
 #import "PHKeyHandler.h"
+#import "PHMenu.h"
+#import "PHMenuItem.h"
 #import "PHModalWindowController.h"
 #import "PHMouse.h"
 #import "PHNotificationHelper.h"
@@ -187,6 +189,8 @@
     self.context[@"Timer"] = [PHTimerHandler class];
     self.context[@"Task"] = [PHTaskHandler class];
     self.context[@"Image"] = [NSImage class];
+    self.context[@"Menu"] = [PHMenu class];
+    self.context[@"MenuItem"] = [PHMenuItem class];
     self.context[@"Modal"] = [PHModalWindowController class];
     self.context[@"Screen"] = [NSScreen class];
     self.context[@"Space"] = [PHSpace class];
@@ -228,6 +232,7 @@
 - (void) load {
 
     [[PHPreferences sharedPreferences] reset];
+    [PHMenu reset];
     [self resetConfigurationPaths];
 
     // No configuration file found, create one for the user

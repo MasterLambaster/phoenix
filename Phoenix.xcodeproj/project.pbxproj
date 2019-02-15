@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		167BF9D82204DACF006F0AEF /* PHMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 167BF9D72204DACF006F0AEF /* PHMenu.m */; };
+		167BF9DB2204DCD0006F0AEF /* PHMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 167BF9DA2204DCD0006F0AEF /* PHMenuItem.m */; };
 		1C93D6641BE11FF100649405 /* PHShebangPreprocessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C93D6631BE11FF100649405 /* PHShebangPreprocessor.m */; };
 		A7183B671B6E865F00842E13 /* PHKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A7183B661B6E865F00842E13 /* PHKeyHandler.m */; };
 		A7288A351CC119BD00EC032B /* PHTimerHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A7288A341CC119BD00EC032B /* PHTimerHandler.m */; };
@@ -63,6 +65,10 @@
 
 /* Begin PBXFileReference section */
 		14DA76905814ABA3258EF84C /* Pods-Phoenix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phoenix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Phoenix/Pods-Phoenix.debug.xcconfig"; sourceTree = "<group>"; };
+		167BF9D62204DACF006F0AEF /* PHMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHMenu.h; sourceTree = "<group>"; };
+		167BF9D72204DACF006F0AEF /* PHMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHMenu.m; sourceTree = "<group>"; };
+		167BF9D92204DCD0006F0AEF /* PHMenuItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHMenuItem.h; sourceTree = "<group>"; };
+		167BF9DA2204DCD0006F0AEF /* PHMenuItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHMenuItem.m; sourceTree = "<group>"; };
 		1C93D6621BE11FF100649405 /* PHShebangPreprocessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHShebangPreprocessor.h; sourceTree = "<group>"; };
 		1C93D6631BE11FF100649405 /* PHShebangPreprocessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHShebangPreprocessor.m; sourceTree = "<group>"; };
 		A7183B651B6E865F00842E13 /* PHKeyHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHKeyHandler.h; sourceTree = "<group>"; };
@@ -187,6 +193,10 @@
 		A72F1D761B89CE3E00835FBF /* Elements */ = {
 			isa = PBXGroup;
 			children = (
+				167BF9D92204DCD0006F0AEF /* PHMenuItem.h */,
+				167BF9DA2204DCD0006F0AEF /* PHMenuItem.m */,
+				167BF9D62204DACF006F0AEF /* PHMenu.h */,
+				167BF9D72204DACF006F0AEF /* PHMenu.m */,
 				A79C467E1B5BF3C100C460CF /* PHApp.h */,
 				A79C467F1B5BF3C100C460CF /* PHApp.m */,
 				A72A6B031B934C2000F2C4EF /* PHIdentifiableJSExport.h */,
@@ -576,6 +586,7 @@
 				A79C46601B5BF31200C460CF /* main.m in Sources */,
 				A79C46981B5BF3C100C460CF /* PHAppDelegate.m in Sources */,
 				A7288A3B1CC14DF800EC032B /* PHWeakTimerTarget.m in Sources */,
+				167BF9D82204DACF006F0AEF /* PHMenu.m in Sources */,
 				A72ED7B61B6E25940064E35B /* PHPhoenix.m in Sources */,
 				A73F956021D65763002FCB22 /* NSImage+PHExtension.m in Sources */,
 				A73C2CAB1B9088040004C663 /* PHNotificationHelper.m in Sources */,
@@ -599,6 +610,7 @@
 				A731A7261C2C76B800EB9FD5 /* PHSpace.m in Sources */,
 				A7E6DF6C1BBAB5B8001920B4 /* PHAXObserver.m in Sources */,
 				A79C469E1B5BF3C100C460CF /* PHPathWatcher.m in Sources */,
+				167BF9DB2204DCD0006F0AEF /* PHMenuItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

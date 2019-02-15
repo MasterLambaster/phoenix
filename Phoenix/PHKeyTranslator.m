@@ -238,6 +238,17 @@ static NSString * const PHKeyTranslatorShiftModifier = @"shift";
     return flags;
 }
 
++ (NSUInteger) carbonToCocoaModifierFlags:(UInt32)flags {
+    NSUInteger cocoaFlags = 0;
+
+    if (flags & cmdKey) cocoaFlags |= NSCommandKeyMask;
+    if (flags & optionKey) cocoaFlags |= NSAlternateKeyMask;
+    if (flags & controlKey) cocoaFlags |= NSControlKeyMask;
+    if (flags & shiftKey) cocoaFlags |= NSShiftKeyMask;
+
+    return cocoaFlags;
+}
+
 + (NSArray<NSString *> *) modifiersForModifierFlags:(NSEventModifierFlags)modifierFlags {
 
     NSMutableArray<NSString *> *modifiers = [NSMutableArray array];

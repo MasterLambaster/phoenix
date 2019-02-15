@@ -14,5 +14,6 @@
 + (UInt32) modifierFlagsForModifiers:(NSArray<NSString *> *)modifiers;
 + (NSArray<NSString *> *) modifiersForModifierFlags:(NSEventModifierFlags)modifierFlags;
 + (UInt32) keyCodeForKey:(NSString *)key;
++ (NSUInteger) carbonToCocoaModifierFlags:(UInt32)flags;
 
 @end

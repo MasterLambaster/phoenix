@@ -669,7 +669,7 @@
             </items>
             <point key="canvasLocation" x="138" y="6"/>
         </menu>
-        <menu id="Uqp-0Q-yc9">
+        <menu autoenablesItems="NO" id="Uqp-0Q-yc9" customClass="PHMenu">
             <items>
                 <menuItem title="Reload" id="WzP-Di-qcH">
                     <modifierMask key="keyEquivalentModifierMask"/>

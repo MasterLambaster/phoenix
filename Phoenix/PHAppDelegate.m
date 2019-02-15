@@ -5,6 +5,8 @@
 #import "PHAppDelegate.h"
 #import "PHContext.h"
 #import "PHEventConstants.h"
+#import "PHMenu.h"
+#import "PHMenuItem.h"
 #import "PHOpenAtLoginHelper.h"
 #import "PHPreferences.h"
 #import "PHUniversalAccessHelper.h"
@@ -16,7 +18,7 @@
 
 #pragma mark - IBOutlet
 
-@property (weak) IBOutlet NSMenu *statusItemMenu;
+@property (weak) IBOutlet PHMenu *statusItemMenu;
 
 @end
 
@@ -49,6 +51,9 @@
                                              selector:@selector(preferencesDidChange:)
                                                  name:PHPreferencesDidChangeNotification
                                                object:nil];
+
+    PHMenu.applicationMenu = self.statusItemMenu;
+
     self.context = [PHContext context];
     [self.context load];
 
